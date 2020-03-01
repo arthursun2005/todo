@@ -24,19 +24,25 @@ struct Env {
 };
 
 Env env = {
-.file =  "/.todo", .tab_spaces = 2, .clear = {
-"clear",
-R"(clears the todo list. usage: todo clear)"
-}, .add = {
-"add",
-R"(adds one task to the todo list. usage: todo add <name> <tag>)"
-}, .remove = {
-"rm",
-R"(removes one task from the todo list. usage: todo rm <ID>)"
-}, .list = {
-"ls",
-R"(lists everything in the todo list. usage: todo ls)"
-}};
+    .file =  "/.todo",
+    .tab_spaces = 2,
+    .clear = {
+    "clear",
+    R"(clears the todo list. usage: todo clear)"
+    },
+    .add = {
+    "add",
+    R"(adds one task to the todo list. usage: todo add <name> <tag>)"
+    },
+    .remove = {
+    "rm",
+    R"(removes one task from the todo list. usage: todo rm <ID>)"
+    },
+    .list = {
+    "ls",
+    R"(lists everything in the todo list. usage: todo ls)"
+    }
+};
 
 struct Task {
     std::string name;
