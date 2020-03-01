@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/arthur/work/code/todo/main.cxx
+iostream
+-
+fstream
+-
+sstream
+-
+pwd.h
+-
+unistd.h
+-
+vector
+-
+
